@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.lp-container {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+  margin: 0 auto;
+}
+
+.lp-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FV */
+.fv {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fv-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.lp-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fv-store-buttons {
+  position: absolute;
+  top: 75%; /* ← FV画像内での縦位置を調整 */
+  left: 35%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.fv-store-badge {
+  width: 18vw;   /* ウィンドウ幅の12% */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.fv-store-badge:hover {
+  transform: scale(1.05);
+}
+
+/* CTA1 */
+.cta1 {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cta1-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.cta1-store-buttons {
+  position: absolute;
+  top: 75%; /* CTA1画像内での縦位置、調整可能 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta1-store-badge {
+  width: 12vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.cta1-store-badge:hover {
+  transform: scale(1.05);
+}
+
+/* CTA2 */
+.cta2 {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cta2-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.cta2-store-buttons {
+  position: absolute;
+  top: 75%; /* CTA2画像内での縦位置、調整可能 */
+  left: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta2-store-badge {
+  width: 12vw;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.cta2-store-badge:hover {
+  transform: scale(1.05);
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
